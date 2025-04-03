@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trie Application</title>
+    <link rel="stylesheet" href="trie.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Trie Data Structure Application</h1>
+      <p class="description">
+        A Trie (prefix tree) is a tree-based data structure used for efficient
+        retrieval of words based on prefixes. This application allows users to
+        insert words into a Trie and retrieve all words that start with a given
+        prefix. It demonstrates the practical usage of Tries in auto-completion,
+        search engines, and dictionary applications.
+      </p>
+
+      <h2>Trie Application</h2>
+      <div class="input-group">
+        <input type="text" id="wordInput" placeholder="Enter word to insert" />
+        <button onclick="insertWord()">Insert Word</button>
+      </div>
+      <div class="input-group">
+        <input type="text" id="prefixInput" placeholder="Enter prefix" />
+        <button onclick="searchPrefix()">Get Words</button>
+      </div>
+      <h3>Words with Prefix:</h3>
+      <ul id="resultList"></ul>
+    </div>
+    <script src="trie.js"></script>
+  </body>
+</html>
